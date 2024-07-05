@@ -1,0 +1,139 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 270px;
+}
+
+.formButton {
+  height: 55px;
+  background-color: #220930;
+  color: white;
+
+  cursor: pointer;
+}
+
+input[type="submit"]:disabled {
+  cursor: not-allowed;
+}
+
+label {
+  display: block;
+
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+input {
+  display: block;
+  width: 100%;
+
+  padding: 10px 15px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  background-color: transparent;
+
+  font-size: 20px;
+
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    border-color: transparent;
+    outline: none;
+    box-shadow: 0 0 0 2px inset hsl(249, 99%, 64%);
+  }
+}
+
+input::placeholder {
+  color: gray;
+  opacity: 0.5;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: 150px;
+}
+
+.cardDateAndCVC {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 3px;
+}
+.cardDateMonth,
+.cardDateYear {
+  width: 70px;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: "textfield";
+}
+
+.cardDate {
+  min-width: 160px;
+}
+
+input.error {
+  border-color: hsl(0, 100%, 66%);
+}
+
+span.error {
+  color: hsl(0, 100%, 66%);
+  display: inline-block;
+  margin: 10px 0;
+}
+
+@media only screen and (min-width: 320px) {
+  .form {
+    margin-top: 12px;
+    max-width: 300px;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .form {
+    max-width: 330px;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .form {
+    max-width: 380px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .form {
+    margin-left: 230px;
+
+    gap: 26px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .cardDateMonth,
+  .cardDateYear {
+    width: 80px;
+  }
+
+  .cardDateAndCVC {
+    gap: 20px;
+  }
+
+  .cardDate {
+    min-width: 170px;
+  }
+
+  section {
+    gap: 10px;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  .form {
+    margin-left: 115px;
+  }
+}

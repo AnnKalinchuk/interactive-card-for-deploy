@@ -1,0 +1,368 @@
+.cardBlock {
+  background: url("../../assets/images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: calc(239px * (280 / 375));
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+  padding: 0 15px;
+
+  position: relative;
+}
+
+.cardContent {
+  position: absolute;
+  top: calc(30px * (280 / 375));
+
+  display: flex;
+  flex-direction: column-reverse;
+
+  color: white;
+}
+
+.cardFront {
+  background: url("../../assets/images/bg-card-front.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  z-index: 9999;
+  margin-top: calc(-70px * (280 / 375));
+  width: calc(288px * (280 / 375));
+  height: calc(160px * (280 / 375));
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 23px 18px;
+}
+
+.cardLogo {
+  position: absolute;
+  z-index: 9999;
+  top: 12px;
+  left: 16px;
+
+  img {
+    width: 49px;
+    height: 28px;
+  }
+}
+
+.circles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.circleLarge {
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border-radius: 50%;
+}
+.circleSmall {
+  width: 12px;
+  height: 12px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.cardName {
+  position: absolute;
+  bottom: 18px;
+  font-weight: 400;
+  font-size: 10px;
+
+  opacity: 0.7;
+}
+.cardNumber {
+  position: absolute;
+  bottom: 47px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.cardDate {
+  position: absolute;
+  bottom: 18px;
+  right: 23px;
+  font-size: 10px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.cardBack {
+  height: 160px;
+  width: 286px;
+  margin-left: calc(55px * (280 / 375));
+  border-radius: 8px;
+  background: url("../../assets/images/bg-card-back.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  width: calc(288px * (280 / 375));
+  height: calc(160px * (280 / 375));
+  transition: all 0.3s ease;
+
+  position: relative;
+  padding: 10px;
+}
+.cardBackInner {
+  position: absolute;
+  font-size: 12px;
+  right: 30px;
+  bottom: 55px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+@media only screen and (min-width: 320px) {
+  .cardContent {
+    top: calc(30px * (320 / 375));
+  }
+
+  .cardBlock {
+    height: calc(239px * (280 / 375));
+  }
+  .cardFront {
+    margin-top: calc(-70px * (320 / 375));
+    width: calc(288px * (320 / 375));
+    height: calc(160px * (320 / 375));
+  }
+  .cardBack {
+    width: calc(288px * (320 / 375));
+    height: calc(160px * (320 / 375));
+    margin-left: calc(55px * (280 / 375));
+  }
+
+  .cardLogo {
+    top: 16px;
+    img {
+      width: 52px;
+      height: 29px;
+    }
+  }
+
+  .cardNumber {
+    bottom: 47px;
+    font-size: 18px;
+  }
+
+  .cardBackInner {
+    bottom: 63px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .cardBlock {
+    height: 239px;
+  }
+  .cardContent {
+    top: 30px;
+  }
+  .cardFront {
+    height: 160px;
+    width: 286px;
+
+    margin-top: -70px;
+  }
+  .cardNumber {
+    font-size: 20px;
+  }
+
+  .cardBackInner {
+    right: 36px;
+    bottom: 76px;
+  }
+
+  .cardLogo {
+    top: 25px;
+    left: 20px;
+  }
+
+  .circles {
+    gap: 10px;
+  }
+
+  .circleLarge {
+    width: 30px;
+    height: 30px;
+  }
+  .circleSmall {
+    width: 15px;
+    height: 15px;
+  }
+  .cardBack {
+    height: 160px;
+    width: 286px;
+
+    margin-left: 55px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .cardContent {
+    top: calc(30px * (500 / 375));
+  }
+
+  .cardBlock {
+    height: calc(239px * (500 / 375));
+  }
+  .cardFront {
+    margin-top: calc(-60px * (500 / 375));
+    width: calc(288px * (500 / 375));
+    height: calc(160px * (500 / 375));
+
+    padding: 23px 30px;
+  }
+
+  .cardLogo {
+    top: 25px;
+    left: 20px;
+
+    img {
+      width: 84px;
+      height: 47px;
+    }
+  }
+
+  .circleLarge {
+    width: 40px;
+    height: 40px;
+  }
+  .circleSmall {
+    width: 20px;
+    height: 20px;
+  }
+
+  .cardNumber {
+    font-size: 28px;
+    bottom: 64px;
+    left: 30px;
+  }
+
+  .cardName {
+    font-size: 12px;
+    bottom: 30px;
+    left: 30px;
+  }
+
+  .cardDate {
+    font-size: 12px;
+    bottom: 30px;
+    right: 30px;
+  }
+
+  .cardBack {
+    width: calc(288px * (500 / 375));
+    height: calc(160px * (500 / 375));
+    margin-left: calc(55px * (500 / 375));
+  }
+
+  .cardBackInner {
+    right: 46px;
+    bottom: 101px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .cardBlock {
+    width: 480px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url("../../assets/images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .cardContent {
+    left: 90px;
+    top: auto;
+    flex-direction: column;
+  }
+
+  .cardFront {
+    margin-top: 0px;
+  }
+  .cardBack {
+    margin-left: 90px;
+    margin-top: 26px;
+
+    box-shadow: 3px -5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .cardLogo {
+    left: 32px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .cardBlock {
+    width: 480px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url("../../assets/images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    flex: 1 0 auto;
+  }
+
+  .cardContent {
+    left: 163px;
+    top: auto;
+
+    flex-direction: column;
+  }
+
+  .cardFront {
+    height: 245px;
+    width: 447px;
+  }
+  .cardNumber {
+    font-size: 33px;
+    bottom: 76px;
+
+    line-height: 1;
+  }
+  .cardName {
+    font-size: 16px;
+  }
+
+  .cardDate {
+    font-size: 16px;
+  }
+
+  .circles {
+    gap: 15px;
+  }
+
+  .circleLarge {
+    width: 50px;
+    height: 50px;
+  }
+
+  .circleSmall {
+    width: 25px;
+    height: 25px;
+  }
+  .cardBack {
+    height: 245px;
+    width: 447px;
+    margin-left: 96px;
+    margin-top: 26px;
+  }
+  .cardBackInner {
+    right: 60px;
+    bottom: 115px;
+    font-size: 16px;
+  }
+}

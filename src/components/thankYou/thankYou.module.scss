@@ -1,0 +1,59 @@
+.thankWrapper {
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 260px;
+}
+.thankTitle {
+  font-size: 28px;
+  letter-spacing: 3px;
+  margin: 35px 0 17px 0;
+}
+.thankText {
+  letter-spacing: 0.3px;
+  font-size: 14px;
+  color: grey;
+}
+
+.thankButton {
+  height: 55px;
+  background-color: #220930;
+  color: white;
+  margin-top: 47px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 20px;
+
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) {
+  .thankWrapper {
+    max-width: 300px;
+  }
+
+  .thankText {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .thankWrapper {
+    max-width: 330px;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .thankWrapper {
+    max-width: 380px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .thankWrapper {
+    margin-left: 230px;
+  }
+}

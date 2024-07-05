@@ -1,0 +1,33 @@
+.inner {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.formBlock {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .inner {
+    flex-direction: row;
+  }
+  .formBlock {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .cardFront {
+    height: calc(245px * (1800 / 1440));
+    width: calc(447px * (1800 / 1440));
+  }
+  .cardBack {
+    height: calc(245px * (1800 / 1400));
+    width: calc(447px * (1800 / 1400));
+  }
+}
